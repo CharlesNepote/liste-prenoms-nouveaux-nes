@@ -5,7 +5,11 @@ La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple e
 
 Ce schéma décrit le détail de chaque champ. Pour chacun, nous fournissons également l'expression rationnelle informatique (ou "regexp") qui permet de contrôler le contenu du champ.
 
-## Exemple
+## Schéma au format Table Schema
+Table Schema est une sorte de "dictionnaire de données" qui permet de valider automatiquement un fichier CSV. Il offre donc une spécification précise du fichier. Il permet également de documenter le format d'un fichier. Il s'agit d'un fichier au format JSON. La spécification de la liste annuelle des prénoms des nouveaux-nés est établie sous cette forme :
+https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v0.7beta/prenom-schema.json
+
+## Exemple de fichiers CSV
 * Exemple compatible avec la version v0.7beta : https://gist.githubusercontent.com/CharlesNepote/94983541b2ca3e84f29b616d1ffa29fa/raw/674351f4b41ed0b581099378d38071c7a8dd711d/prenom.csv
 
 ## Historique
