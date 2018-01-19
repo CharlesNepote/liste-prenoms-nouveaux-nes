@@ -6,8 +6,8 @@
     "version": "0.5beta",
     "created": "2017-03-24",
     "description": "La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms avec l'occurence de chacun pour une année donnée.\n\n Ce schéma décrit le détail de chaque champ. Pour chacun, nous fournissons également la regexp qui permet de contrôler le contenu du champ.",
-    "homepage": "https://gist.github.com/CharlesNepote/26126a30adddc1781cb652b2af164ea8",
-    "uri": "https://gist.githubusercontent.com/CharlesNepote/26126a30adddc1781cb652b2af164ea8/raw/",
+    "homepage": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/",
+    "uri": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v0.5beta/prenom-schema.json",
     "previous": "https://gist.githubusercontent.com/CharlesNepote/26126a30adddc1781cb652b2af164ea8/raw/f64e24afd4c7ee5dfe8453dff209fd52d536d59a/prenom-schema.json",
     "fields": [
       {
