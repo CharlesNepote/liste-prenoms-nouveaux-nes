@@ -1,0 +1,81 @@
+{
+  "schema": {
+    "title": "Spécification de la liste annuelle des prénoms des nouveaux-nés",
+    "author": "Charles Nepote &lt;charles.nepote@fing.org&gt;",
+    "contributor": "Simon Chignard, Bernadette Kessler, Christian Quest",
+    "version": "0.5beta",
+    "created": "2017-03-24",
+    "description": "La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms avec l'occurence de chacun pour une année donnée.\n\n Ce schéma décrit le détail de chaque champ. Pour chacun, nous fournissons également la regexp qui permet de contrôler le contenu du champ.",
+    "homepage": "https://gist.github.com/CharlesNepote/26126a30adddc1781cb652b2af164ea8",
+    "uri": "https://gist.githubusercontent.com/CharlesNepote/26126a30adddc1781cb652b2af164ea8/raw/",
+    "previous": "https://gist.githubusercontent.com/CharlesNepote/26126a30adddc1781cb652b2af164ea8/raw/f64e24afd4c7ee5dfe8453dff209fd52d536d59a/prenom-schema.json",
+    "fields": [
+      {
+        "name": "CODE_INSEE",
+        "title": "Code INSEE",
+        "description": "Code INSEE de la commune où les prénoms sont enregistrés à l'état-civil, c'est-à-dire le lieu de naissance. Le lieu de naissance peut être différent du lieu de résidence des parents, comme cela peut être le cas pour les enfants nés dans une maternité. Issu du Code officiel géographique, le \"code INSEE\" est composé de 5 caractères alphanumériques (les deux premiers correspondent au département et peuvent donc contenir les lettres A et B, utilisées pour la Corse).",
+        "type": "string",
+        "examples": "06088, 2B002 (pour une commune corse)",
+        "constraints": {
+          "required": true,
+          "pattern": "^([013-9]\\d|2[AB1-9])\\d{3}$"
+        }
+      },
+      {
+        "name": "COMMUNE",
+        "title": "Commune concernée",
+        "type": "string",
+        "description": "Le renseignement de ce champ est facultatif. Il permet cependant de faciliter l'usage des données, notamment par le grand public.",
+        "examples": "Rennes, Marseille, Brocas",
+        "constraints": {
+          "required": false,
+          "pattern": "^[A-ZÉÀÈÙÄËÏÖÜŸÂÊÎÔÛŶÇ].*$"
+        }
+      },
+      {
+        "name": "SEXE_ENFANT",
+        "title": "Sexe relatif au prénom",
+        "type": "string",
+        "description": "Sexe correspondant au prénom : M ou F ou I, respectivement pour masculin, féminin ou intersexué/indéterminé. L'information est importante car certains prénoms sont aussi bien masculins que féminin, comme Camille. \"I\" signale un genre spécifiquement intersexué ou indéterminé ; il ne mentionne pas un sexe inconnu. \"I\" n'est théoriquement pas encore utilisé en France mais plusieurs pays on créé un tel statut et de nombreux éléments suggèrent une évolution prochaine du droit en France (affaires judiciaires, recommandations d'experts juridiques, demandes des associations, etc.).",
+        "constraints": {
+          "required": true,
+          "pattern": "^(M|F|I)$"
+        },
+        "examples": "F"
+      },
+      {
+        "name": "PRENOM",
+        "title": "Prénom",
+        "description": "Prénom de nouveau(x)-né(s) constaté comme premier prénom dans les actes d'état-civil de l'année correspondante. Un acte de naissance peut désigner un nouveau-né avec plusieurs prénoms et le législateur a prévu que \"tout prénom inscrit dans l'acte de naissance peut être choisi comme prénom usuel.\" (article 52 du Code Civil). La plupart du temps le premier prénom est le prénom d'usage initialement choisi par le(s) parent(s). Cette spécification ne retient donc que le premier prénom : si un nouveau-né est appelé \"Armelle Julia Blanche\", seul \"Armelle\" sera retenu pour constituer ce jeu de données. Un prénom composé comme Marie-Jeanne compte pour un prénom complet. Le site service-public.fr signale que \"l'alphabet utilisé doit être celui qui sert à l'écriture du français. Les caractères alphabétiques étrangers ne sont donc pas autorisés (par exemple le « ñ »)\". Outre les caractères alphabétiques, un prénom peut posséder un trait d'union, voire deux, comme dans Lou-Anne ou Mohamed-El-Amine. Des prénoms peuvent posséder une apostrophe comme dans Gwenc'Hlan ou N'Deye, voire peut-être deux. Nous considérons aussi qu'un prénom pourrait terminer voire débuter par une apostrophe -- cette dernière étant parfois utilisé en français pour marquer la suppression de la finale ou du début d'un mot, comme dans Boul' Mich'.",
+        "type": "string",
+        "constraints": {
+          "required": true,
+          "pattern": "^'?[A-ZÉÀÈÙÄËÏÖÜŸÂÊÎÔÛŶÇ][a-zéàèùäëïüöÿâêîôûŷç]*('|(('?[A-ZÉÀÈÙÄËÏÖÜŸÂÊÎÔÛŶÇ][a-zéàèùäëïüöÿâêîôûŷç]*)|(-[A-ZÉÀÈÙÄËÏÖÜŸÂÊÎÔÛŶÇ][a-zéàèùäëïüöÿâêîôûŷç]*)){1,2}|)$"
+        },
+        "examples": "\"Marianne\", \"Jean-Philippe\", \"Gwenc'Hlan\", \"O'Ryan\", \"Mohamed-El-Amine\""
+      },
+      {
+        "name": "NOMBRE_D_OCCURRENCES",
+        "title": "Nombre d'occurrences",
+        "description": "Nombre d'occurrences du prénom pour l'année correspondante. Tous les prénoms sont comptabilisés, y compris les prénoms uniques -- un seuil minimum est exclu car il conduirait à passer sous silence une importante part des naissances, voire la totalité dans les petites communes. La valeur de ce champ est donc un nombre entier d'un à 6 chiffres maximum, 0 étant exclu.",
+        "type": "string",
+        "constraints": {
+          "required": true,
+          "pattern": "^[1-9]\\d{0,5}$"
+        },
+        "examples": "\"1\", \"102\", \"5\", \"10\", \"1053\""
+      },
+      {
+        "name": "ANNEE",
+        "title": "Année",
+        "description": "Année de relevé, sur quatre chiffres.",
+        "type": "date",
+        "constraints": {
+          "required": true,
+          "pattern": "^[1-2]\\d\\d\\d$"
+        },
+        "examples": "\"2005\", \"1992\", \"1886\""
+      }
+    ]
+  }
+}
