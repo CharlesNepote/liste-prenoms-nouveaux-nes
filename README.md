@@ -30,13 +30,18 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v0.7beta/prenom
 * Spécifier dans la description que la commune est la commune d'inscription à l'état-civil et pas la commune de résidence des parents ?
 
 ## Historique
+* 2018-01-31 : publication par OpenDataFrance d'une version "1.0" sur le Socle commun des données locales d'Opendata Locale, sous le titre "Prénoms des nouveaux-nés. Liste annuelle des prénoms des nouveaux-nés déclarés à l’état-civil" : http://opendatalocale.net/presentation-de-chaque-jeu-et-de-sa-normalisation-precise/
+  * par rapport à la version 1.0(beta) d'OpenDataFrance :
+    * le nom de la commune (COMMUNE_NOM) fait son retour, en lieu et place du nom de la collectivité (COLL_NOM), car il est moins ambigü
+    * le nom de la commune n'est pas obligatoire
+    * le titre de la spec est plus clair, "Prénoms des nouveaux-nés"
 * 2018-01-19 : rétro-publication des versions 0.5beta et 0.7beta sur Github, afin de garder un historique des modifications et une URL plus pérenne
 * 2017-11-29 : publication par la Ville de Digne-les-Bains d'une première version compatible avec la version 1.0 (beta) du Socle commun des données locales, source : https://twitter.com/mairiedigne/status/935878333174370305
 * 2017-06-13 : publication par OpenDataFrance d'une version "1.0 (beta)" sur le Socle commun des données locales d'Opendata Locale, sous le titre "Prénoms. Liste annuelle des prénoms des nouveaux-nés déclarés à l’état-civil" : http://opendatalocale.net/presentation-de-chaque-jeu-et-de-sa-normalisation-precise/
   * il s'agit d'une version réécrite par OpenDataFrance de la 0.5beta :
     * les noms des colonnes ont presque tous changé
     * certains exemples ont été réécris (NOMBRE_OCCURENCES...)
-    * le nom de la commune a été remplacé par le nom de la collectivité
+    * le nom de la commune a été remplacé par le nom de la collectivité (COLL_NOM)
     * le nom de la collectivité est devenu obligatoire
     * le nom de la collectivité est ambigu lorsqu'on compare son objet "Nom officiel de la collectivité" et l'exemple donné "Ville de Nice" ; par ailleurs, "Ville de Nice" n'est pas intuitif pour le grand public qui, dans un index alphabétique, recherchera plus naturellement "Nice"
     * le document n'est pas historisé si bien qu'on ne sait pas qui a changé quoi et pourquoi
