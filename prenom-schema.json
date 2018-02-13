@@ -69,7 +69,7 @@
       "name": "ANNEE",
       "title": "Année",
       "description": "Année de relevé, sur quatre chiffres.",
-      "type": "date",
+      "type": "year",
       "constraints": {
         "required": true,
         "pattern": "^[1-2]\\d\\d\\d$"
