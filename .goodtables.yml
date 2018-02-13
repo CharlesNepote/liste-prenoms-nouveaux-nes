@@ -1,0 +1,13 @@
+# YML file with inspired from https://github.com/Stephen-Gates/data-package-examples/blob/master/goodtables.yml
+
+# .goodtables.yml should conform to the format at https://github.com/frictionlessdata/goodtables.io/blob/master/goodtablesio/schemas/job-conf.yml
+
+# validate all csv files without reference to the datapackages
+#
+# files: '*.csv'
+
+# validate a mixture of csv files optionally with a tableschema
+#
+files:
+- source: 'prenoms-nouveaux-nes.exemple.1.1.csv'
+  schema: 'prenom-schema.json'
