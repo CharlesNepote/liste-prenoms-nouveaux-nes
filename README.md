@@ -1,5 +1,5 @@
 # liste-prenoms-nouveaux-nes
-Spécification de la liste annuelle des prénoms des nouveaux-nés en France.
+Spécification de la liste annuelle des prénoms des nouveaux-nés déclarés à l'état-civil.
 
 La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms avec l'occurrence de chacun pour une année donnée. Les prénoms listés correspondent au premier prénom donné dans chaque acte de naissance de l'état-civil.
 
@@ -17,24 +17,31 @@ Ce standard a tout d'abord été élaboré à partir du recueil et de l'observat
 
 ## Schéma au format Table Schema
 Table Schema est une sorte de "dictionnaire de données" qui permet de valider automatiquement un fichier CSV. Il offre donc une spécification précise du fichier. Il permet également de documenter le format d'un fichier. Il s'agit d'un fichier au format JSON. La spécification de la liste annuelle des prénoms des nouveaux-nés est établie sous cette forme :
-https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v0.7beta/prenom-schema.json
+https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-schema.json
 
-## Exemple de fichiers CSV
-* Exemple compatible avec la version v0.7beta : https://gist.githubusercontent.com/CharlesNepote/94983541b2ca3e84f29b616d1ffa29fa/raw/674351f4b41ed0b581099378d38071c7a8dd711d/prenom.csv
+## Exemples de fichiers CSV
+* Exemple compatible avec la version 1.1 : https://raw.githubusercontent.com/CharlesNepote/liste-prenoms-nouveaux-nes/1.1/prenoms-nouveaux-nes.exemple.1.1.csv
 
 ## TODO
 * Mieux spécifier le nom de la commune pour éviter les effets de type "DIGNE-LES-BAINS", "rennes" et "Montpellier"
-* Essayer de converger avec OpenDataFrance vers une version commune 1.1
 * Améliorer le process d'évolution
-* Adopter "déclarés à l'état-civil" pour le titre
 * Spécifier dans la description que la commune est la commune d'inscription à l'état-civil et pas la commune de résidence des parents ?
 
 ## Historique
-* 2018-01-31 : publication par OpenDataFrance d'une version "1.0" sur le Socle commun des données locales d'Opendata Locale, sous le titre "Prénoms des nouveaux-nés. Liste annuelle des prénoms des nouveaux-nés déclarés à l’état-civil" : http://opendatalocale.net/presentation-de-chaque-jeu-et-de-sa-normalisation-precise/
-  * par rapport à la version 1.0(beta) d'OpenDataFrance :
+* 2018-02-13 : **v1.1**
+  * alignement avec la version 1.1 d'OpenDataFrance : les deux specs sont désormais compatibles au niveau de l'ordre et du nom des champs
+  * changement du titre : ajout de "déclarés à l'état-civil"
+  * changement des noms de champs : COMMUNE devient COMMUNE_NOM, CODE_INSEE devient COLL_INSEE, SEXE_ENFANT devient ENFANT_SEXE, PRENOM devient ENFANT_PRENOM et NOMBRE_D_OCCURRENCES devient NOMBRE_OCCURENCES
+  * changement de la regexp de ENFANT_PRENOM pour rendre invalide JeanRenaud
+  * publication d'un fichier de test valide
+  * publication d'un fichier de test invalide
+  * publication du fichier goodtables.yml pour permettre au service goodtables.io de valider les données de test
+* 2018-02-13 : publication par OpenDataFrance d'une version "1.1" sur le Socle commun des données locales d'Opendata Locale, sous le titre "Prénoms des nouveaux-nés. Liste annuelle des prénoms des nouveaux-nés déclarés à l’état-civil" : http://opendatalocale.net/presentation-de-chaque-jeu-et-de-sa-normalisation-precise/
+  * par rapport à la version 1.0 d'OpenDataFrance :
     * le nom de la commune (COMMUNE_NOM) fait son retour, en lieu et place du nom de la collectivité (COLL_NOM), car il est moins ambigü
     * le nom de la commune n'est pas obligatoire
     * le titre de la spec est plus clair, "Prénoms des nouveaux-nés"
+* 2018-01-31 : publication par OpenDataFrance d'une version "1.0", qui n'est que la validation de la 1.0(beta)
 * 2018-01-19 : rétro-publication des versions 0.5beta et 0.7beta sur Github, afin de garder un historique des modifications et une URL plus pérenne
 * 2017-11-29 : publication par la Ville de Digne-les-Bains d'une première version compatible avec la version 1.0 (beta) du Socle commun des données locales, source : https://twitter.com/mairiedigne/status/935878333174370305
 * 2017-06-13 : publication par OpenDataFrance d'une version "1.0 (beta)" sur le Socle commun des données locales d'Opendata Locale, sous le titre "Prénoms. Liste annuelle des prénoms des nouveaux-nés déclarés à l’état-civil" : http://opendatalocale.net/presentation-de-chaque-jeu-et-de-sa-normalisation-precise/
