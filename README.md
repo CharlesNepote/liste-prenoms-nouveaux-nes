@@ -30,9 +30,11 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 ## Historique
 * 2018-02-13 : **v1.1**
   * alignement avec la version 1.1 d'OpenDataFrance : les deux specs sont désormais compatibles au niveau de l'ordre et du nom des champs
-  * changement du titre : ajout de "déclarés à l'état-civil"
-  * changement des noms de champs : COMMUNE devient COMMUNE_NOM, CODE_INSEE devient COLL_INSEE, SEXE_ENFANT devient ENFANT_SEXE, PRENOM devient ENFANT_PRENOM et NOMBRE_D_OCCURRENCES devient NOMBRE_OCCURENCES
-  * changement de la regexp de ENFANT_PRENOM pour rendre invalide JeanRenaud
+    * changement du titre : ajout de "déclarés à l'état-civil"
+    * changement des noms de champs : COMMUNE devient COMMUNE_NOM, CODE_INSEE devient COLL_INSEE, SEXE_ENFANT devient ENFANT_SEXE, PRENOM devient ENFANT_PRENOM et NOMBRE_D_OCCURRENCES devient NOMBRE_OCCURENCES
+  * dans la spec au format Table Schema :
+    * le champ ANNEE est désormais au format "year"
+    * changement de la regexp de ENFANT_PRENOM pour rendre invalide JeanRenaud
   * publication d'un fichier de test valide
   * publication d'un fichier de test invalide
   * publication du fichier goodtables.yml pour permettre au service goodtables.io de valider les données de test
