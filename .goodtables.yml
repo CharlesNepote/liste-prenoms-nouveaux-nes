@@ -11,3 +11,5 @@
 files:
 - source: 'prenoms-nouveaux-nes.exemple.1.1.csv'
   schema: 'prenom-schema.json'
+- source: 'prenoms-nouveaux-nes.exemple.1.1.invalide.csv'
+  schema: 'prenom-schema.json'
