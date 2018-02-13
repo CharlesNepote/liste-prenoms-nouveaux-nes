@@ -1,6 +1,7 @@
 # YML file with inspired from https://github.com/Stephen-Gates/data-package-examples/blob/master/goodtables.yml
 
-# .goodtables.yml should conform to the format at https://github.com/frictionlessdata/goodtables.io/blob/master/goodtablesio/schemas/job-conf.yml
+# goodtables.yml should conform to the format at https://github.com/frictionlessdata/goodtables.io/blob/master/goodtablesio/schemas/job-conf.yml
+# See also : https://github.com/frictionlessdata/goodtables.io/blob/master/docs/configuration/goodtables_yml.md
 
 # validate all csv files without reference to the datapackages
 #
@@ -11,5 +12,7 @@
 files:
 - source: 'prenoms-nouveaux-nes.exemple.1.1.csv'
   schema: 'prenom-schema.json'
+  encoding: utf-8
 - source: 'prenoms-nouveaux-nes.exemple.invalide.1.1.csv'
   schema: 'prenom-schema.json'
+  encoding: utf-8
