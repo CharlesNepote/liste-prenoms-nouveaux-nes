@@ -26,6 +26,7 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 * Mieux spécifier le nom de la commune pour éviter les effets de type "DIGNE-LES-BAINS", "rennes" et "Montpellier"
 * Améliorer le process d'évolution
 * Spécifier dans la description que la commune est la commune d'inscription à l'état-civil et pas la commune de résidence des parents ?
+* Spécifier le nombre d'occurences sous forme d'int ?
 
 ## Historique
 * 2018-02-13 : **v1.1**
