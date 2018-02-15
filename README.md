@@ -26,7 +26,7 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 * Mieux spécifier le nom de la commune pour éviter les effets de type "DIGNE-LES-BAINS", "rennes" et "Montpellier"
 * Améliorer le process d'évolution
 * Spécifier dans la description que la commune est la commune d'inscription à l'état-civil et pas la commune de résidence des parents ?
-* Spécifier le nombre d'occurences sous forme d'int ?
+* Spécifier le nombre d'occurences sous forme d'int ET le contreindre à une valeur inférieure à 99 999 ?
 
 ## Historique
 * 2018-02-13 : **v1.1**
@@ -38,7 +38,7 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
     * changement de la regexp de ENFANT_PRENOM pour rendre invalide JeanRenaud
   * publication d'un fichier de test valide
   * publication d'un fichier de test invalide
-  * publication du fichier goodtables.yml pour permettre au service goodtables.io de valider les données de test
+  * publication du fichier goodtables.yml pour permettre au service goodtables.io de [valider les données de test](https://goodtables.io/github/CharlesNepote/liste-prenoms-nouveaux-nes)
 * 2018-02-13 : publication par OpenDataFrance d'une version "1.1" sur le Socle commun des données locales d'Opendata Locale, sous le titre "Prénoms des nouveaux-nés. Liste annuelle des prénoms des nouveaux-nés déclarés à l’état-civil" : http://opendatalocale.net/presentation-de-chaque-jeu-et-de-sa-normalisation-precise/
   * par rapport à la version 1.0 d'OpenDataFrance :
     * le nom de la commune (COMMUNE_NOM) fait son retour, en lieu et place du nom de la collectivité (COLL_NOM), car il est moins ambigü
