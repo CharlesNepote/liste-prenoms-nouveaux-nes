@@ -16,3 +16,6 @@ files:
 - source: 'prenoms-nouveaux-nes.exemple.invalide.1.1.csv'
   schema: 'prenom-schema.json'
   encoding: utf-8
+- source: 'DIGNE-PRENOMS-2017.csv'
+  schema: 'prenom-schema.json'
+  encoding: utf-8
