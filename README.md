@@ -1,4 +1,4 @@
-# liste-prenoms-nouveaux-nes
+# liste-prenoms-nouveaux-nes 1.1.1
 Spécification de la liste annuelle des prénoms des nouveaux-nés déclarés à l'état-civil.
 
 La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms avec l'occurrence de chacun pour une année donnée. Les prénoms listés correspondent au premier prénom donné dans chaque acte de naissance de l'état-civil.
@@ -23,14 +23,28 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 * Exemple compatible avec la version 1.1 : https://raw.githubusercontent.com/CharlesNepote/liste-prenoms-nouveaux-nes/1.1/prenoms-nouveaux-nes.exemple.1.1.csv
 
 ## TODO
-* Revoir la regex pour ENFANT_PRENOM qui ne tient pas compte de Lawai'a
 * Revoir la regex pour les lettres liées : AE et OE (exemple : Oedipe)
-* Mieux spécifier le nom de la commune pour éviter les effets de type "DIGNE-LES-BAINS", "rennes" et "Montpellier"
-* Améliorer le process d'évolution
+* Mieux spécifier le nom de la commune pour encourager les communes à choisir un nom normalisé (INSEE, par exemple)
 * Spécifier dans la description que la commune est la commune d'inscription à l'état-civil et pas la commune de résidence des parents ?
 * Spécifier le nombre d'occurrences sous forme d'int ET le contraindre à une valeur inférieure à 99 999 ?
 
+## Process d'évolution
+* À partir de la version 1.1, nous adoptons la pratique du "[versionnement sémantique](https://semver.org/lang/fr/)"
+* Pour chaque nouvelle version :
+  * Dans le fichier JSON de la spec :
+   	* on effectue les changement de fond
+   	* on change le champ "version"
+	   * on change le champ "created" avec la date de modification
+	   * on change le champ "uri" auquel on donne le nom de la branche
+   	* on change le champ "previous" auquel on donne le nom de la version stable précédente
+   	* on change éventuellement champ "example"
+  * On documente le changement dans la rubrique "historique du readme"
+  * On change la version dans le titre de la spec.
+* Lorsqu'une nouvelle version est prête on la tague en veillant à ce que le tag soit cohérent avec le champ "uri" du fichier JSON.
+
 ## Historique
+* 2018-04-12 : **v.1.1.1**
+  * changement de la regex de contrôle des prénoms pour accepter O'brian et pas seulement O'Brian
 * 2018-02-13 : **v1.1**
   * alignement avec la version 1.1 d'OpenDataFrance : les deux specs sont désormais compatibles au niveau de l'ordre et du nom des champs
     * changement du titre : ajout de "déclarés à l'état-civil"
