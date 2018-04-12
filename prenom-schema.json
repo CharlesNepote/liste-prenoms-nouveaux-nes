@@ -6,7 +6,7 @@
   "created": "2018-04-12",
   "description": "La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms déclarés à l'état-civil de la commune de naissance, avec l'occurrence de chacun pour une année donnée. Les prénoms listés correspondent au premier prénom donné dans chaque acte de naissance.\n\nCe schéma décrit le détail de chaque champ. Pour chacun, nous fournissons également l'expression rationnelle informatique (ou \"regexp\") qui permet de contrôler le contenu du champ.\n\n",
   "homepage": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes",
-  "uri": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1.1beta/prenom-schema.json",
+  "uri": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1.1/prenom-schema.json",
   "previous": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1/prenom-schema.json",
   "example": "https://gist.githubusercontent.com/CharlesNepote/48a73b05762d0e49bcc26d5ea5265a75/raw/1fa1a085a793e6925991b0dc6a07d653d3726506/prenom-nouveaux-nes.exemple.1.1.csv",
   "fields": [
@@ -50,7 +50,7 @@
       "type": "string",
       "constraints": {
         "required": true,
-        "pattern": "^'?[A-ZÉÀÈÙÄËÏÖÜŸÂÊÎÔÛŶÇ][a-zéàèùäëïüöÿâêîôûŷç]*(|'|(('[A-ZÉÀÈÙÄËÏÖÜŸÂÊÎÔÛŶÇa-zéàèùäëïüöÿâêîôûŷç][a-zéàèùäëïüöÿâêîôûŷç]*'?){1,2}|(-[A-ZÉÀÈÙÄËÏÖÜŸÂÊÎÔÛŶÇ][a-zéàèùäëïüöÿâêîôûŷç]*'?){1,2}){1,5})$"
+        "pattern": "^'?[A-ZÉÀÈÙÄËÏÖÜŸÂÊÎÔÛŶÇŒÆ][a-zéàèùäëïüöÿâêîôûŷçæœ]*(|'|(('[A-ZÉÀÈÙÄËÏÖÜŸÂÊÎÔÛŶÇŒÆa-zéàèùäëïüöÿâêîôûŷçæœ][a-zéàèùäëïüöÿâêîôûŷçæœ]*'?){1,2}|(-[A-ZÉÀÈÙÄËÏÖÜŸÂÊÎÔÛŶÇŒÆ][a-zéàèùäëïüöÿâêîôûŷçæœ]*'?){1,2}){1,5})$"
       },
       "examples": "\"Marianne\", \"Jean-Philippe\", \"Gwenc'Hlan\", \"O'Ryan\", \"Mohamed-El-Amine\""
     },
