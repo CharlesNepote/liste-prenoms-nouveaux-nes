@@ -24,6 +24,7 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 
 ## TODO
 * Revoir la regex pour ENFANT_PRENOM qui ne tient pas compte de Lawai'a
+* Revoir la regex pour les lettres liées : AE et OE (exemple : Oedipe)
 * Mieux spécifier le nom de la commune pour éviter les effets de type "DIGNE-LES-BAINS", "rennes" et "Montpellier"
 * Améliorer le process d'évolution
 * Spécifier dans la description que la commune est la commune d'inscription à l'état-civil et pas la commune de résidence des parents ?
