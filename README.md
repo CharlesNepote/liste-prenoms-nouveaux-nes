@@ -5,6 +5,8 @@ La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple e
 
 Ce schéma décrit le détail de chaque champ. Pour chacun, nous fournissons également l'expression rationnelle informatique (ou "regexp") qui permet de contrôler le contenu du champ.
 
+La dernière version de cette spécification est disponible à l'adresse : https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes
+
 ## Origine du standard
 Ce standard a tout d'abord été élaboré à partir du recueil et de l'observation des fichiers produits en open data par plusieurs communes françaises, publiés dès 2012. Il s'est nourri de l'observation des usages et a puisé également dans les textes de lois ou textes de référence qui standardisent la forme des prénoms en français.
 
@@ -25,7 +27,6 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 ## TODO
 * Revoir la regex pour les lettres liées : AE et OE (exemple : Oedipe)
 * Mieux spécifier le nom de la commune pour encourager les communes à choisir un nom normalisé (INSEE, par exemple)
-* Spécifier dans la description que la commune est la commune d'inscription à l'état-civil et pas la commune de résidence des parents ?
 * Spécifier le nombre d'occurrences sous forme d'int ET le contraindre à une valeur inférieure à 99 999 ?
 
 ## Process d'évolution
@@ -34,8 +35,8 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
   * Dans le fichier JSON de la spec :
    	* on effectue les changement de fond
    	* on change le champ "version"
-	   * on change le champ "created" avec la date de modification
-	   * on change le champ "uri" auquel on donne le nom de la branche
+	* on change le champ "created" avec la date de modification
+	* on change le champ "uri" auquel on donne le nom de la branche
    	* on change le champ "previous" auquel on donne le nom de la version stable précédente
    	* on change éventuellement champ "example"
   * On documente le changement dans la rubrique "historique du readme"
@@ -43,9 +44,10 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 * Lorsqu'une nouvelle version est prête on la tague en veillant à ce que le tag soit cohérent avec le champ "uri" du fichier JSON.
 
 ## Historique
-* 2018-04-12 : **v.1.1.1**
+* 2018-04-12 : **[v.1.1.1](https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/tree/v1.1.1)**
   * changement de la regex de contrôle des prénoms pour accepter O'brian et pas seulement O'Brian
-* 2018-02-13 : **v1.1**
+  * on précise bien qu'il s'agit du lieu de naissance et non du lieu de résidence
+* 2018-02-13 : **[v1.1](https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/tree/v1.1)**
   * alignement avec la version 1.1 d'OpenDataFrance : les deux specs sont désormais compatibles au niveau de l'ordre et du nom des champs
     * changement du titre : ajout de "déclarés à l'état-civil"
     * changement des noms de champs : COMMUNE devient COMMUNE_NOM, CODE_INSEE devient COLL_INSEE, SEXE_ENFANT devient ENFANT_SEXE, PRENOM devient ENFANT_PRENOM et NOMBRE_D_OCCURRENCES devient NOMBRE_OCCURENCES
