@@ -4,7 +4,7 @@
   "contributor": "Simon Chignard, Bernadette Kessler, Christian Quest",
   "version": "1.1.1",
   "created": "2018-04-12",
-  "description": "La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms avec l'occurrence de chacun pour une année donnée. Les prénoms listés correspondent au premier prénom donné dans chaque acte de naissance de l'état-civil.\n\nCe schéma décrit le détail de chaque champ. Pour chacun, nous fournissons également l'expression rationnelle informatique (ou \"regexp\") qui permet de contrôler le contenu du champ.\n\n",
+  "description": "La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms déclarés à l'état-civil de la commune de naissance, avec l'occurrence de chacun pour une année donnée. Les prénoms listés correspondent au premier prénom donné dans chaque acte de naissance.\n\nCe schéma décrit le détail de chaque champ. Pour chacun, nous fournissons également l'expression rationnelle informatique (ou \"regexp\") qui permet de contrôler le contenu du champ.\n\n",
   "homepage": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes",
   "uri": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1.1beta/prenom-schema.json",
   "previous": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1/prenom-schema.json",
@@ -14,7 +14,7 @@
       "name": "COMMUNE_NOM",
       "title": "Commune concernée",
       "type": "string",
-      "description": "Le renseignement de ce champ est facultatif. Il permet cependant de faciliter l'usage des données, notamment par le grand public.",
+      "description": "Nom de la commune où les prénoms sont enregistrés à l'état-civil, c'est-à-dire le lieu de naissance. Le lieu de naissance peut être différent du lieu de résidence des parents, comme cela peut être le cas pour les enfants nés dans une maternité. Le renseignement de ce champ est facultatif. Il permet cependant de faciliter l'usage des données, notamment par le grand public.",
       "examples": "Rennes, Marseille, Brocas",
       "constraints": {
         "required": false,
@@ -24,7 +24,7 @@
     {
       "name": "COLL_INSEE",
       "title": "Code INSEE",
-      "description": "Code INSEE de la commune où les prénoms sont enregistrés à l'état-civil, c'est-à-dire le lieu de naissance. Le lieu de naissance peut être différent du lieu de résidence des parents, comme cela peut être le cas pour les enfants nés dans une maternité. Issu du Code officiel géographique, le \"code INSEE\" est composé de 5 caractères alphanumériques (les deux premiers correspondent au département et peuvent donc contenir les lettres A et B, utilisées pour la Corse).",
+      "description": "Code INSEE de la commune où les prénoms sont enregistrés à l'état-civil, c'est-à-dire le lieu de naissance. Issu du Code officiel géographique, le \"code INSEE\" est composé de 5 caractères alphanumériques (les deux premiers correspondent au département et peuvent donc contenir les lettres A et B, utilisées pour la Corse).",
       "type": "string",
       "examples": "06088, 2B002 (pour une commune corse)",
       "constraints": {
