@@ -25,7 +25,6 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 * Exemple compatible avec la version 1.1 : https://raw.githubusercontent.com/CharlesNepote/liste-prenoms-nouveaux-nes/1.1/prenoms-nouveaux-nes.exemple.1.1.csv
 
 ## TODO
-* Revoir la regex pour les lettres liées : AE et OE (exemple : Oedipe)
 * Mieux spécifier le nom de la commune pour encourager les communes à choisir un nom normalisé (INSEE, par exemple)
 * Spécifier le nombre d'occurrences sous forme d'int ET le contraindre à une valeur inférieure à 99 999 ?
 
@@ -46,6 +45,7 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 ## Historique
 * 2018-04-12 : **[v.1.1.1](https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/tree/v1.1.1)**
   * changement de la regex de contrôle des prénoms pour accepter O'brian et pas seulement O'Brian
+  * changement de la regex pour les lettres liées : AE et OE (exemple : Ægir, Œdipe, Læticia, Cœur)
   * on précise bien qu'il s'agit du lieu de naissance et non du lieu de résidence
 * 2018-02-13 : **[v1.1](https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/tree/v1.1)**
   * alignement avec la version 1.1 d'OpenDataFrance : les deux specs sont désormais compatibles au niveau de l'ordre et du nom des champs
