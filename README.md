@@ -44,6 +44,7 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 
 ## Historique
 * 2018-04-12 : **[v.1.1.1](https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/tree/v1.1.1)**
+  * version rétro-compatible avec la 1.1, sans aucun impact sur les données
   * changement de la regex de contrôle des prénoms pour accepter O'brian et pas seulement O'Brian
   * changement de la regex pour les lettres liées : AE et OE (exemple : Ægir, Œdipe, Læticia, Cœur)
   * on précise bien qu'il s'agit du lieu de naissance et non du lieu de résidence
