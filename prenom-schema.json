@@ -39,7 +39,7 @@
       "description": "Sexe correspondant au prénom : M ou F ou I, respectivement pour masculin, féminin ou intersexué/indéterminé. L'information est importante car certains prénoms sont aussi bien masculins que féminin, comme Camille. \"I\" signale un genre spécifiquement intersexué ou indéterminé ; il ne mentionne pas un sexe inconnu. \"I\" n'est théoriquement pas encore utilisé en France mais plusieurs pays on créé un tel statut et de nombreux éléments suggèrent une évolution prochaine du droit en France (affaires judiciaires, recommandations d'experts juridiques, demandes des associations, etc.).",
       "constraints": {
         "required": true,
-        "pattern": "^(M|F|I)$"
+        "enum": ["M", "F", "I"]
       },
       "examples": "F"
     },
