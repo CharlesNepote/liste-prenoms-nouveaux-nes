@@ -1,0 +1,16 @@
+{
+    "$schema": "https://git.opendatafrance.net/validata/goodtables-checks-schema/raw/v0.2/goodtables_checks_schema.json",
+    "title": "Validations personnalisées en complément du schéma SCDL Prénoms",
+    "author": "Christophe Benz, Jailbreak",
+    "version": "1.1.2",
+    "created": "2018-09-26",
+    "homepage": "https://git.opendatafrance.net/scdl/prenoms",
+    "pre_checks": [
+        {
+            "name": "column-delimiter",
+            "params": {
+                "delimiter": ","
+            }
+        }
+    ]
+}
