@@ -1,4 +1,4 @@
-# liste-prenoms-nouveaux-nes 1.1.1
+# liste-prenoms-nouveaux-nes 1.1.2
 Spécification de la liste annuelle des prénoms des nouveaux-nés déclarés à l'état-civil.
 
 La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms avec l'occurrence de chacun pour une année donnée. Les prénoms listés correspondent au premier prénom donné dans chaque acte de naissance de l'état-civil.
@@ -43,6 +43,9 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 * Lorsqu'une nouvelle version est prête on la tague en veillant à ce que le tag soit cohérent avec le champ "uri" du fichier JSON.
 
 ## Historique
+* 2018-05-16 : **[v1.1.2](https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/tree/v1.1.2)**
+  * spécification du délimiteur de colonnes CSV ","
+  * utilisation du type "enum" à la place de "pattern"
 * 2018-04-12 : **[v.1.1.1](https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/tree/v1.1.1)**
   * version rétro-compatible avec la 1.1, sans aucun impact sur les données
   * changement de la regex de contrôle des prénoms pour accepter O'brian et pas seulement O'Brian
