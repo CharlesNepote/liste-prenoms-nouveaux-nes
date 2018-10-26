@@ -27,6 +27,8 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 ## TODO
 * Mieux spécifier le nom de la commune pour encourager les communes à choisir un nom normalisé (INSEE, par exemple)
 * Spécifier le nombre d'occurrences sous forme d'int ET le contraindre à une valeur inférieure à 99 999 ?
+* Gérer le cas où les prénoms contiennent des espaces, ce qui semble permis depuis 2011, comme le montre notamment le jeu de données d'Avignon
+* Résourdre les problèmes de branches/tags
 
 ## Process d'évolution
 * À partir de la version 1.1, nous adoptons la pratique du "[versionnement sémantique](https://semver.org/lang/fr/)"
@@ -44,6 +46,7 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 
 ## Historique
 * 2018-05-16 : **[v1.1.2](https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/tree/v1.1.2)**
+  * version rétro-compatible avec la 1.1, sans aucun impact sur les données
   * spécification du délimiteur de colonnes CSV ","
   * utilisation du type "enum" à la place de "pattern"
 * 2018-04-12 : **[v.1.1.1](https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/tree/v1.1.1)**
