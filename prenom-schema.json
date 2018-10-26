@@ -1,13 +1,14 @@
 {
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
   "title": "Spécification de la liste annuelle des prénoms des nouveaux-nés déclarés à l'état-civil",
-  "author": "Charles Nepote &lt;charles.nepote@fing.org&gt;",
-  "contributor": "Simon Chignard, Bernadette Kessler, Christian Quest",
-  "version": "1.1.1",
+  "author": "Charles Nepote <charles.nepote@fing.org>",
+  "contributor": "Simon Chignard, Bernadette Kessler, Christian Quest, Christophe Benz",
+  "version": "1.1.2",
   "created": "2018-04-12",
   "description": "La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms déclarés à l'état-civil de la commune de naissance, avec l'occurrence de chacun pour une année donnée. Les prénoms listés correspondent au premier prénom donné dans chaque acte de naissance.\n\nCe schéma décrit le détail de chaque champ. Pour chacun, nous fournissons également l'expression rationnelle informatique (ou \"regexp\") qui permet de contrôler le contenu du champ.\n\n",
   "homepage": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes",
-  "uri": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1.1/prenom-schema.json",
-  "previous": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1/prenom-schema.json",
+  "uri": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1.2/prenom-schema.json",
+  "previous": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1.1/prenom-schema.json",
   "example": "https://gist.githubusercontent.com/CharlesNepote/48a73b05762d0e49bcc26d5ea5265a75/raw/1fa1a085a793e6925991b0dc6a07d653d3726506/prenom-nouveaux-nes.exemple.1.1.csv",
   "fields": [
     {
@@ -39,7 +40,7 @@
       "description": "Sexe correspondant au prénom : M ou F ou I, respectivement pour masculin, féminin ou intersexué/indéterminé. L'information est importante car certains prénoms sont aussi bien masculins que féminin, comme Camille. \"I\" signale un genre spécifiquement intersexué ou indéterminé ; il ne mentionne pas un sexe inconnu. \"I\" n'est théoriquement pas encore utilisé en France mais plusieurs pays on créé un tel statut et de nombreux éléments suggèrent une évolution prochaine du droit en France (affaires judiciaires, recommandations d'experts juridiques, demandes des associations, etc.).",
       "constraints": {
         "required": true,
-        "pattern": "^(M|F|I)$"
+        "enum": ["M", "F", "I"]
       },
       "examples": "F"
     },
