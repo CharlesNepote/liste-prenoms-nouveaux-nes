@@ -59,10 +59,11 @@
       "name": "NOMBRE_OCCURRENCES",
       "title": "Nombre d'occurrences",
       "description": "Nombre d'occurrences du prénom pour l'année correspondante. Tous les prénoms sont comptabilisés, y compris les prénoms uniques -- un seuil minimum est exclu car il conduirait à passer sous silence une importante part des naissances, voire la totalité dans les petites communes. La valeur de ce champ est donc un nombre entier d'un à 6 chiffres maximum, 0 étant exclu.",
-      "type": "string",
+      "type": "integer",
       "constraints": {
-        "required": true,
-        "pattern": "^[1-9]\\d{0,5}$"
+          "required": true,
+          "minimum": 1,
+          "maximum": 999999
       },
       "examples": "\"1\", \"102\", \"5\", \"10\", \"1053\""
     },
