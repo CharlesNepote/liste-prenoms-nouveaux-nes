@@ -1,14 +1,13 @@
 {
-  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
-  "title": "Prénoms des nouveaux-nés",
-  "author": "Charles Nepote <charles.nepote@fing.org>",
-  "contributor": "Simon Chignard, Bernadette Kessler, Christian Quest, Christophe Benz",
+  "title": "Spécification de la liste annuelle des prénoms des nouveaux-nés déclarés à l'état-civil",
+  "author": "Charles Nepote &lt;charles.nepote@fing.org&gt;",
+  "contributor": "Simon Chignard, Bernadette Kessler, Christian Quest",
   "version": "1.1.2",
   "created": "2018-04-12",
-  "description": "Spécification du modèle de données relatif aux prénoms des nouveaux-nés déclarés à l’état-civil",
+  "description": "La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms déclarés à l'état-civil de la commune de naissance, avec l'occurrence de chacun pour une année donnée. Les prénoms listés correspondent au premier prénom donné dans chaque acte de naissance.\n\nCe schéma décrit le détail de chaque champ. Pour chacun, nous fournissons également l'expression rationnelle informatique (ou \"regexp\") qui permet de contrôler le contenu du champ.\n\n",
   "homepage": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes",
-  "uri": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1.2/prenom-schema.json",
-  "previous": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1.1/prenom-schema.json",
+  "uri": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1.2/schema.json",
+  "previous": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/v1.1.2/schema.json",
   "example": "https://gist.githubusercontent.com/CharlesNepote/48a73b05762d0e49bcc26d5ea5265a75/raw/1fa1a085a793e6925991b0dc6a07d653d3726506/prenom-nouveaux-nes.exemple.1.1.csv",
   "fields": [
     {
@@ -65,7 +64,7 @@
           "minimum": 1,
           "maximum": 999999
       },
-      "examples": "\"1\", \"102\", \"5\", \"10\", \"1053\""
+      "examples": "1, 102, 5, 10, 1053"
     },
     {
       "name": "ANNEE",
