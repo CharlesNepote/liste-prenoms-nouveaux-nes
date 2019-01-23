@@ -7,11 +7,11 @@
   "updated": "2019-01-23",
   "description": "La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms déclarés à l'état-civil de la commune de naissance, avec l'occurrence de chacun pour une année donnée. Les prénoms listés correspondent au premier prénom donné dans chaque acte de naissance.\n\nCe schéma décrit le détail de chaque champ. Pour chacun, nous fournissons également l'expression rationnelle informatique (ou \"regexp\") qui permet de contrôler le contenu du champ.\n\n",
   "homepage": "https://github.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/",
-  "uri": "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/master/schema.json",
-  "previous": "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/master/schema.json",
+  "uri": "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/v1.1.3/schema.json",
+  "previous": "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/v1.1.3/schema.json",
   "examples": [
-    "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/master/examples/DIGNE-PRENOMS-2017.csv",
-    "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/master/examples/prenoms-nouveaux-nes.exemple.invalide.1.1.csv",
+    "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/v1.1.3/examples/DIGNE-PRENOMS-2017.csv",
+    "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/v1.1.3/examples/prenoms-nouveaux-nes.exemple.invalide.1.1.csv",
     "https://data.opendatasoft.com/explore/dataset/prenoms@hauts-de-seine/download/?format=csv&timezone=Europe/Berlin&use_labels_for_header=true"
   ],
   "fields": [
