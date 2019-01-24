@@ -1,11 +1,11 @@
 {
-  "title": "Spécification de la liste annuelle des prénoms des nouveaux-nés déclarés à l'état-civil",
+  "title": "Prénoms des nouveaux-nés",
   "author": "Charles Nepote <charles.nepote@fing.org>",
   "contributor": "Simon Chignard, Bernadette Kessler, Christian Quest, Christophe Benz, Pierre Dittgen",
   "version": "1.1.3",
   "created": "2018-04-12",
   "updated": "2019-01-23",
-  "description": "La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms déclarés à l'état-civil de la commune de naissance, avec l'occurrence de chacun pour une année donnée. Les prénoms listés correspondent au premier prénom donné dans chaque acte de naissance.\n\nCe schéma décrit le détail de chaque champ. Pour chacun, nous fournissons également l'expression rationnelle informatique (ou \"regexp\") qui permet de contrôler le contenu du champ.\n\n",
+  "description": "Spécification du modèle de données relatif aux prénoms des nouveaux-nés déclarés à l’état-civil.",
   "homepage": "https://github.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/",
   "uri": "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/v1.1.3/schema.json",
   "previous": "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/v1.1.3/schema.json",
