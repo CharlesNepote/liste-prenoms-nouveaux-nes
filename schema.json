@@ -9,20 +9,6 @@
   "homepage": "https://github.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/",
   "uri": "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/v1.1.3/schema.json",
   "previous": "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/v1.1.3/schema.json",
-  "examples": [
-    {
-      "name": "Prénoms des nouveaux-nés Digne-les-Bains 2017",
-      "url": "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/v1.1.3/examples/DIGNE-PRENOMS-2017.csv"
-    },
-    {
-      "name": "Prénoms des nouveaux-nés fictifs invalides",
-      "url": "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/v1.1.3/examples/prenoms-nouveaux-nes.exemple.invalide.1.1.csv"
-    },
-    {
-      "name": "Liste des prénoms donnés à Suresnes de 2010 à 2017 (plateforme OpenDataSoft)",
-      "url": "https://data.opendatasoft.com/explore/dataset/prenoms@hauts-de-seine/download/?format=csv&timezone=Europe/Berlin&use_labels_for_header=true"
-    }
-  ],
   "fields": [
     {
       "name": "COMMUNE_NOM",
