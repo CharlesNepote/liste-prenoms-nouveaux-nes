@@ -6,9 +6,9 @@
   "created": "2018-04-12",
   "updated": "2019-01-23",
   "description": "Spécification du modèle de données relatif aux prénoms des nouveaux-nés déclarés à l’état-civil.",
-  "homepage": "https://github.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/",
-  "uri": "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/v1.1.3/schema.json",
-  "previous": "https://raw.githubusercontent.com/Jailbreak-Paris/liste-prenoms-nouveaux-nes/v1.1.3/schema.json",
+  "homepage": "https://github.com/OpenDataFrance/liste-prenoms-nouveaux-nes/",
+  "uri": "https://raw.githubusercontent.com/OpenDataFrance/liste-prenoms-nouveaux-nes/v1.1.3/schema.json",
+  "previous": "https://raw.githubusercontent.com/OpenDataFrance/liste-prenoms-nouveaux-nes/v1.1.3/schema.json",
   "fields": [
     {
       "name": "COMMUNE_NOM",
