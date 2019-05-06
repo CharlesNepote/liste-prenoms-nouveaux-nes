@@ -1,4 +1,5 @@
 {
+  "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
   "title": "Prénoms des nouveaux-nés",
   "author": "Charles Nepote <charles.nepote@fing.org>",
   "contributor": "Simon Chignard, Bernadette Kessler, Christian Quest, Christophe Benz, Pierre Dittgen",
@@ -6,9 +7,9 @@
   "created": "2018-04-12",
   "updated": "2019-01-23",
   "description": "Spécification du modèle de données relatif aux prénoms des nouveaux-nés déclarés à l’état-civil.",
-  "homepage": "https://github.com/OpenDataFrance/liste-prenoms-nouveaux-nes/",
-  "uri": "https://raw.githubusercontent.com/OpenDataFrance/liste-prenoms-nouveaux-nes/v1.1.3/schema.json",
-  "previous": "https://raw.githubusercontent.com/OpenDataFrance/liste-prenoms-nouveaux-nes/v1.1.3/schema.json",
+  "homepage": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes",
+  "uri": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/raw/v1.1.3/schema.json",
+  "example": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/raw/v1.1.3/prenoms-nouveaux-nes.exemple.1.1.csv",
   "fields": [
     {
       "name": "COMMUNE_NOM",
