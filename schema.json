@@ -1,15 +1,72 @@
 {
   "$schema": "https://frictionlessdata.io/schemas/table-schema.json",
+  "name": "scdl-prenoms",
   "title": "Prénoms des nouveaux-nés",
-  "author": "Charles Nepote <charles.nepote@fing.org>",
-  "contributor": "Simon Chignard, Bernadette Kessler, Christian Quest, Christophe Benz, Pierre Dittgen",
-  "version": "1.1.3",
-  "created": "2018-04-12",
-  "updated": "2019-01-23",
   "description": "Spécification du modèle de données relatif aux prénoms des nouveaux-nés déclarés à l’état-civil.",
+  "countryCode": "FR",
   "homepage": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes",
-  "uri": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/raw/v1.1.3/schema.json",
-  "example": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/raw/v1.1.3/prenoms-nouveaux-nes.exemple.1.1.csv",
+  "path": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/raw/v1.1.3/schema.json",
+  "resources": [
+    {
+      "title": "Fichier des prénoms Digne 2017 (valide)",
+      "path": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/raw/master/DIGNE-PRENOMS-2017.csv"
+    },
+    {
+      "title": "Exemple de fichier des prénoms invalide",
+      "path": "https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/raw/master/prenoms-nouveaux-nes.exemple.invalide.1.1.csv"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Code civil",
+      "path": "https://www.legifrance.gouv.fr/affichCode.do?cidTexte=LEGITEXT000006070721&dateTexte=20170327"
+    },
+    {
+      "title": "Circulaire du 28 octobre 2011 relative aux règles particulières à divers actes de l'état civil relatifs à la naissance et à la filiation — NOR : JUSC1119808C",
+      "path": "http://www.textes.justice.gouv.fr/art_pix/JUSC1119808C.pdf"
+    },
+    {
+      "title": "Circulaire du 23 juillet 2014 relative à l’état civil — NOR : JUSC1412888C",
+      "path": "http://circulaire.legifrance.gouv.fr/pdf/2014/07/cir_38565.pdf"
+    },
+    {
+      "title": "Normes techniques de l'INSEE",
+      "path": "http://xml.insee.fr/schema/etat-civil/"
+    }
+  ],
+  "created": "2018-04-12",
+  "lastModified": "2019-01-23",
+  "version": "1.1.3",
+  "contributors": [
+    {
+      "title": "Charles Nepote",
+      "role": "author",
+      "email": "charles.nepote@fing.org"
+    },
+    {
+      "title": "Simon Chignard",
+      "role": "contributor",
+      "email": "simon.chignard@data.gouv.fr"
+    },
+    {
+      "title": "Bernadette Kessler",
+      "role": "contributor"
+    },
+    {
+      "title": "Christian Quest",
+      "role": "contributor"
+    },
+    {
+      "title": "Christophe Benz",
+      "role": "contributor",
+      "email": "christophe.benz@jailbreak.paris"
+    },
+    {
+      "title": "Pierre Dittgen",
+      "role": "contributor",
+      "email": "pierre.dittgen@jailbreak.paris"
+    }
+  ],
   "fields": [
     {
       "name": "COMMUNE_NOM",
