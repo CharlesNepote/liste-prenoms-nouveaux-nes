@@ -1,4 +1,4 @@
-# liste-prenoms-nouveaux-nes 1.1.2
+# liste-prenoms-nouveaux-nes 1.1.3
 Spécification de la liste annuelle des prénoms des nouveaux-nés déclarés à l'état-civil.
 
 La liste annuelle des prénoms des nouveaux-nés est un jeu de données simple et très apprécié du public. Il consiste en une liste de prénoms avec l'occurrence de chacun pour une année donnée. Les prénoms listés correspondent au premier prénom donné dans chaque acte de naissance de l'état-civil.
@@ -26,7 +26,6 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 
 ## TODO
 * Mieux spécifier le nom de la commune pour encourager les communes à choisir un nom normalisé (INSEE, par exemple)
-* Spécifier le nombre d'occurrences sous forme d'int ET le contraindre à une valeur inférieure à 99 999 ?
 * Gérer le cas où les prénoms contiennent des espaces, ce qui semble permis depuis 2011, comme le montre notamment le jeu de données d'Avignon
 * Résourdre les problèmes de branches/tags
 
@@ -45,6 +44,9 @@ https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/blob/1.1/prenom-sche
 * Lorsqu'une nouvelle version est prête on la tague en veillant à ce que le tag soit cohérent avec le champ "uri" du fichier JSON.
 
 ## Historique
+* 2018-11-30 : **[v.1.1.3](https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/releases/tag/v1.1.3)**
+  * version rétro-compatible avec la 1.1, sans aucun impact sur les données
+  * Le champ NOMBRE_OCCURENCES est désormais spécifié come "int" (soit un nombre) et sa valeur comprise entre 1 et 999999
 * 2018-05-16 : **[v1.1.2](https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/tree/v1.1.2)**
   * version rétro-compatible avec la 1.1, sans aucun impact sur les données
   * spécification du délimiteur de colonnes CSV ","
