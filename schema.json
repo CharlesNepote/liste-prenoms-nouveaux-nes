@@ -139,8 +139,7 @@
       "description": "Année de relevé, sur quatre chiffres, au format AAAA.",
       "type": "year",
       "constraints": {
-        "required": true,
-        "pattern": "^[1-2]\\d\\d\\d$"
+        "required": true
       },
       "examples": "2016"
     }
