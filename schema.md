@@ -5,9 +5,9 @@ Spécification du modèle de données relatif aux prénoms des nouveaux-nés dé
 - nom : `prenoms`
 - page d'accueil : https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes
 - URL du schéma : https://github.com/CharlesNepote/liste-prenoms-nouveaux-nes/raw/v1.1.4/schema.json
-- version : `1.1.4`
+- version : `1.1.5`
 - date de création : 2018-04-12
-- date de dernière modification : 2019-07-31
+- date de dernière modification : 2020-05-18
 - concerne le pays : FR
 - valeurs manquantes représentées par : `[""]`
 - contributeurs :
@@ -78,4 +78,3 @@ Ce modèle de données repose sur les 6 champs suivants correspondant aux colonn
 - description : Année de relevé, sur quatre chiffres, au format AAAA.
 - type : année
 - valeur obligatoire
-- motif : `^[1-2]\d\d\d$`

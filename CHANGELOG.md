@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.5
+
+* Suppression d'une contrainte non supportée dans le champ `ANNEE`
+
 ## 1.1.4
 
 * fusion de la documentation du schéma à partir des fichiers `CONTEXT.md` et `SEE_ALSO.md` dans `README.md`
